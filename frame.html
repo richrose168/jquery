@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>経費申請</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <form id="form" class="form">
+    <div id="loginform">
+        <h1>経費申請フォーム</h1>
+        <input id="btnAdd1" type="button" value="行追加" />
+        <table id="tblForm1">
+            <thead>
+                <tr>
+                    <th>発生日</th>
+                    <th>経費内容</th>
+                    <th>金額</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input style="width: 150px;" name="date[]" type="date" /></td>
+                    <td><input style="width: 150px;" name="type[]" type="text" /></td>
+                    <td><input style="width: 150px;" name="price[]" type="number" /></td>
+                    <td><input class="btnDelete" type="button" value="削除" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  <script src="script2.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+.slideshow {
+    overflow: hidden;
+    position: relative;
+    min-width: 960px;
+    height: 465px;
+}
+
+.slideshow img{
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -800px;
+}
+
+.page-header{
+    background-color: 'white';
+    position: absolute;
+    width: 100%;
+    min-width: 960px;
+}
+.page-header.sticky {
+    position:fixed;
+    top:0;
+}
+.page-header > .inner{
+    margin:auto;
+    width:960px;
+}
