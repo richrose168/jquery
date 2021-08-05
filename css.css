@@ -26,3 +26,27 @@
     margin:auto;
     width:960px;
 }
+.work-section .tabs-nav{
+    float:left;
+    position: relative;
+}
+.work-section .tabs-nav a{
+    display: block;
+    padding: 0 1.36em;
+    position: relative;
+}
+.work-section .tabs-nav a:hover,
+.work-section .tabs-nav a.active{
+    background-color: brown;
+    color:cyan;
+}
+
+.work-section .tabs-nav a.active:after{
+    content:"";
+    position: absolute;
+}
+
+.work-section .section-body{
+    height:400px;
+    position: relative;
+}

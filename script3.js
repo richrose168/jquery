@@ -42,4 +42,25 @@ $(function() {
         $window.trigger('scroll');
 
     });
+
+    $('#work').each(function (){
+        var $tabList = $(this).find('.tabs-nav'), //windowをオブジェクト化
+            $tabAnchor = $tabList.find('a'),
+            // headerのデフォルトの位置を取得
+            $tabPanels = $(this).find('.tabs-panel');
+        $tabList.on('click','a',function(event){
+            event.preventDefault();
+            var $this = $(this);
+            if($this.hasClass('active')){
+                return;
+            }
+            $tabAnchor.removeClass('active');
+            $this.addClass('active');
+
+            $tabPanels.hide();
+            $($this.attr('href')).show();
+        });
+        $tabAnchor.eq(0).trigger('click');
+    });
+
 });
