@@ -40,5 +40,6 @@ $(function() {
         });
         // scrolleイベントの発火
         $window.trigger('scroll');
+
     });
 });
